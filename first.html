@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid Management System</title>
+	<style>
+		.logo{
+  		height: 100px;
+  		width: 100px;
+  		position: absolute;
+  		transform: translate(-50%,-50%);
+  		top: 25%;
+  		left: 50%;
+
+		}
+		body{
+			font-family: "Calibri";
+		}
+		/**{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}*/
+		.slider{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height:100vh;
+		background: -webkit-gradient(linear,left top ,right bottom, color-stop(0%,rgb(24, 125, 123)), color-stop(100%,rgb(40, 65, 75)));
+		z-index: -1;
+		}
+		nav{
+			position: sticky;
+			display: grid;
+			grid-template-columns: 7fr 1fr 1fr 1fr;
+			align-items: center;
+		}
+		#aboutus{
+			grid-column: 2/3;
+		}
+		section{
+			position: sticky;
+			display: flex;
+			height: 80vh;
+			justify-content: center;
+			align-items: center;
+		}
+		.mainimg{
+			height: 95%;
+			width: 80%;
+		}
+		.mainimg img{
+			height:100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		#heading{
+			display: inline;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.container{
+			text-align: center;
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%;
+		}
+		.container span{
+			/*text-transform: uppercase;*/
+			display: block;
+		}
+		.maintext{
+			color: black;
+			font-size: 90px;
+			font-weight: 700;
+			letter-spacing: 8px;
+			margin-top: 45px;
+			position: relative;
+			animation: text1 900ms 1 linear;
+		}
+		.subtitle{
+			font-size: 30px;
+			font-weight: 800;
+			color: rgba(0,0,0,0.7);
+			animation: text2 3s 1 ease;
+			font-weight: 600px;
+		}
+		@keyframes text1{
+			0%{
+
+				letter-spacing: 30px;
+				/*margin-top: 20px;*/
+			}
+			/*15%{
+				letter-spacing: 25px;
+			}*/
+			25%{	
+				/*margin-top: 0px;*/
+				letter-spacing: 25px;
+			}
+			/*35%{
+				letter-spacing: 25px;
+			}*/
+			50%{
+				letter-spacing: 20px;
+			}
+			/*60%{
+				letter-spacing: 15px;
+			}*/
+			75%{
+				letter-spacing: 15px;
+			}
+			/*85%{
+				letter-spacing: 10px;
+			}*/
+			100%{
+				/*top: 45%;*/
+				letter-spacing: 10px;
+			}
+		}
+		@keyframes text2{
+			0%{
+				opacity: 0;
+				visibility: none;
+			}
+			25%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0.4;
+			}
+			75%{
+				opacity: 0.7;
+			}
+			100%{
+				opacity: 1.5;
+			}
+		}
+		.about-us{
+			text-align: center;
+			color: white;
+			height: 200px;
+			width: 100%;
+			background-color: rgba(0,0,0,0.6);
+		}
+		.patienticon{
+			height: 110px;
+			width: 100px;
+			margin-left:50px;
+			margin-bottom: 20px;
+		}
+		.adminicon{
+			height: 120px;
+			width: 120px;
+			margin:10px;
+		}
+		.icons{
+			display: inline;
+			position: absolute;
+			bottom: -80%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+	</style>
+	<script>
+		
+	</script>
+</head>
+<body>
+	<h1 id="heading" style="color: white;">Covid Management System </h1>
+	<header>
+		<nav>
+			
+			<h3 id="aboutus" style="color: white;">About us</h3>
+			<h3 id="aboutvirus" style="color: white;">About virus</h3>
+			<h3 id="contactus" style="color: white;">Contact Us</h3>
+		</nav>
+		<section>
+			<div class="mainimg">
+				<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-male-doctor-wearing-white-coveralls-royalty-free-image-1596379685.jpg">
+				
+			</div>
+<div class="container">
+	<span class="maintext">CovidCare</span>
+	<span class="subtitle">We're in this together</span> 
+	<h2>Select who you are below: </h2>
+	<div class="icons">
+      <a href="C:\Users\win\Desktop\DBMS project deskptop\reg.html">
+         <img class="adminicon" src="https://www.flaticon.com/svg/static/icons/svg/2206/2206368.svg">
+      </a>
+      <a href="C:\Users\win\Desktop\DBMS project deskptop\reg.html">
+         <img class="patienticon" src="https://cdn2.iconfinder.com/data/icons/covid-19-1/64/21-Measure_the_fever-512.png">
+      </a>
+      </div>
+</div>
+		</section>
+
+		<br>
+		<img class="logo" src="C:\Users\win\Desktop\DBMS project deskptop\final logo.png">
+	</header>
+	<div class="slider">
+		
+	</div> <br><br><br>
+	<div class="about-us"> <br>
+<h2>About us</h2> 
+<p>We are people who want to do our part in this pandemic and have created a website from where people can easily register for getting tested for the virus or to get admitted in a quarantine center or in a designated hospital. Using our website anyone can view the centers where they can quarantine themselves or testing centers to get tested. 
+The admins can view the patients who are registering for quarantine center and can delete or update the patient's information. </p>
+	</div>
+</body>
+</html>
